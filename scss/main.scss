@@ -220,7 +220,7 @@ h2.secondary {
   }
 
   li::before {
-    content: url("/dist/img/check.svg");
+    content: url("../img/check.svg");
     width: 14px;
     height: 11px;
     padding-right: 1rem;
@@ -486,21 +486,21 @@ h2.secondary {
   }
 
   li.fb::before {
-    content: url("/dist/img/facebook.svg");
+    content: url("../img/facebook.svg");
     width: 10px;
     height: 10px;
     padding-right: 0.6rem;
   }
 
   li.tweet::before {
-    content: url("/dist/img/twitter.svg");
+    content: url("../img/twitter.svg");
     width: 10px;
     height: 10px;
     padding-right: 0.6rem;
   }
 
   li.insta::before {
-    content: url("/dist/img/instagram.svg");
+    content: url("../img/instagram.svg");
     width: 10px;
     height: 10px;
     padding-right: 0.6rem;
