@@ -260,7 +260,7 @@ h2.secondary {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding: 0 0 2rem 0;
+    padding: 0 0 3rem 0;
     max-width: 940px;
     margin: auto; }
     .players-feedback .feedback_1 {
@@ -302,7 +302,7 @@ h2.secondary {
     align-items: center;
     padding-top: 1rem; }
   .players-feedback .player-img {
-    flex: 0; }
+    flex-shrink: 0; }
   .players-feedback .player-location {
     font-size: 0.7rem; }
 
@@ -369,7 +369,8 @@ h2.secondary {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    opacity: 0.8; }
 
 @media screen and (min-width: 769px) and (max-width: 940px) {
   header {
