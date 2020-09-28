@@ -183,7 +183,7 @@ h2.secondary {
     margin: 0;
     padding: 0; }
   .differences-table li::before {
-    content: url("/dist/img/check.svg");
+    content: url("../img/check.svg");
     width: 14px;
     height: 11px;
     padding-right: 1rem; }
@@ -367,17 +367,17 @@ h2.secondary {
     opacity: 0.8;
     text-align: center; }
   .footer-container li.fb::before {
-    content: url("/dist/img/facebook.svg");
+    content: url("../img/facebook.svg");
     width: 10px;
     height: 10px;
     padding-right: 0.6rem; }
   .footer-container li.tweet::before {
-    content: url("/dist/img/twitter.svg");
+    content: url("../img/twitter.svg");
     width: 10px;
     height: 10px;
     padding-right: 0.6rem; }
   .footer-container li.insta::before {
-    content: url("/dist/img/instagram.svg");
+    content: url("../img/instagram.svg");
     width: 10px;
     height: 10px;
     padding-right: 0.6rem; }
