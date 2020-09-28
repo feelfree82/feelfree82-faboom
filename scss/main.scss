@@ -9,6 +9,7 @@ body {
   background-color: $primary-color;
   font-family: "Noto Sans", sans-serif;
   color: $text-color;
+  margin: 0;
 }
 
 .logo-flat-150 {
@@ -24,8 +25,11 @@ h3,
 h4,
 h5,
 p,
-button {
+button,
+ul,
+li {
   margin: 0;
+  padding: 0;
 
   &.large-title {
     font-size: 3rem;
@@ -47,6 +51,12 @@ button {
     letter-spacing: -0.5px;
     padding-bottom: 1.2rem;
   }
+}
+
+.banner {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 // buttons
@@ -88,7 +98,6 @@ header {
 .navbar {
   display: flex;
   justify-content: space-between;
-
   padding-top: 0.3rem;
   max-width: 940px;
   text-align: center;
@@ -145,59 +154,22 @@ header {
   }
 }
 
-// slider
-
-* {
-  margin: 0;
-  padding: 0;
+//ham & fab mobile
+label {
+  font-size: 2rem;
+  line-height: 4rem;
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 0;
 }
-.slider {
-  width: 320px;
-  height: 585px;
-  margin: 0 auto;
-  overflow: hidden;
+
+#toggle {
+  display: none;
 }
-.slider .slider-container {
-  width: 300%;
-}
-.slider .slider-container img {
-  width: 320px;
-  height: 585px;
-  float: left;
-  padding: 0 0.5rem;
-  animation: slideEffect 5s ease-in 0;
-}
-@keyframes slideEffect {
-  0% {
-    transform: translatex(0);
-    opacity: 0;
-  }
 
-  1% {
-    opacity: 1;
-  }
-
-  49% {
-    opacity: 1;
-  }
-
-  50% {
-    transform: translatex(-100%);
-    opacity: 0;
-  }
-
-  51% {
-    opacity: 1;
-  }
-
-  99% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translatex(-200%);
-    left: 1;
-  }
+.fab {
+  display: none;
 }
 
 //differences
@@ -242,6 +214,11 @@ h2.secondary {
     text-align: left;
   }
 
+  .difference-points {
+    margin: 0;
+    padding: 0;
+  }
+
   li::before {
     content: url("/dist/img/check.svg");
     width: 14px;
@@ -257,7 +234,8 @@ h2.secondary {
   margin-top: 3rem;
 }
 
-.available-contests-container {
+.available-contests-container-1,
+.available-contests-container-2 {
   max-width: 940px;
   margin: 0 auto;
   padding: 2rem;
@@ -266,7 +244,7 @@ h2.secondary {
   gap: 4rem;
   border-bottom: 2px solid $border-color;
 
-  .available-contests-container:last-child {
+  .available-contests-container-2 {
     border-bottom: none;
   }
 
@@ -412,7 +390,6 @@ h2.secondary {
 
 .footer-container {
   max-width: 940px;
-  //text-align: center;
   margin: 0 auto;
 
   .main-footer {
@@ -463,23 +440,22 @@ h2.secondary {
 
   .list {
     flex-shrink: 0;
+    text-align: center;
 
-    .links,
-    .links-social {
+    .links {
       //text-decoration: none;
       list-style-type: none;
       line-height: 2rem;
     }
 
-    .links a,
-    .links-social a {
+    .links a {
       text-decoration: none;
       color: $text-color;
       font-size: 0.9rem;
       letter-spacing: -0.5;
 
       &:hover {
-        opacity: 0.9;
+        opacity: 0.8;
       }
     }
   }
@@ -506,6 +482,28 @@ h2.secondary {
     align-items: center;
     padding-bottom: 1rem;
     opacity: 0.8;
+    text-align: center;
+  }
+
+  li.fb::before {
+    content: url("/dist/img/facebook.svg");
+    width: 10px;
+    height: 10px;
+    padding-right: 0.6rem;
+  }
+
+  li.tweet::before {
+    content: url("/dist/img/twitter.svg");
+    width: 10px;
+    height: 10px;
+    padding-right: 0.6rem;
+  }
+
+  li.insta::before {
+    content: url("/dist/img/instagram.svg");
+    width: 10px;
+    height: 10px;
+    padding-right: 0.6rem;
   }
 }
 
