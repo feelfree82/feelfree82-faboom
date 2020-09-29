@@ -33,6 +33,7 @@
 
   header {
     position: relative;
+    padding-bottom: 1rem;
   }
 
   .navbar {
@@ -71,6 +72,14 @@
     flex-direction: column-reverse;
     align-items: center;
     gap: 0;
+  }
+
+  .rf {
+    padding-right: 0;
+  }
+
+  .bf {
+    padding-left: 0;
   }
 
   .players-feedback .feedback {
