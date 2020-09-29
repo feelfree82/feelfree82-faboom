@@ -105,13 +105,13 @@ header {
 
 .main-nav {
   display: flex;
-  gap: 1.4rem;
   align-items: center;
   flex: 1 1 0;
   justify-content: flex-end; }
   .main-nav .nav-items {
     list-style-type: none;
     font-size: 0.9rem;
+    padding: 0 0.5rem;
     cursor: pointer; }
     .main-nav .nav-items.active {
       opacity: 0.8;
