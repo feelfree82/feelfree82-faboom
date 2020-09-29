@@ -106,7 +106,9 @@ header {
 .main-nav {
   display: flex;
   gap: 1.4rem;
-  align-items: center; }
+  align-items: center;
+  flex: 1 1 0;
+  justify-content: flex-end; }
   .main-nav .nav-items {
     list-style-type: none;
     font-size: 0.9rem;
@@ -446,9 +448,7 @@ h2.secondary {
     text-align: center;
     display: none;
     padding: 0;
-    padding-top: 1rem;
-    flex: 1 1 0;
-    justify-content: flex-end; }
+    padding-top: 1rem; }
   .navbar {
     padding: 1rem 0 0 0; }
   .nav-items {
