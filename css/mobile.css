@@ -15,15 +15,13 @@
     float: right;
     position: sticky; }
   header {
-    position: relative;
-    padding-bottom: 1rem; }
+    position: relative; }
   .navbar {
     flex-direction: column;
     padding: 1rem; }
   .main-nav {
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 1rem; }
+    padding: 1rem; }
   .hero {
     padding: 0 1rem; }
     .hero .large-title {
@@ -35,12 +33,16 @@
     align-items: center; }
   .available-contests-container-1 {
     flex-direction: column;
-    align-items: center;
-    gap: 0; }
+    align-items: center; }
   .available-contests-container-2 {
     flex-direction: column-reverse;
-    align-items: center;
-    gap: 0; }
+    align-items: center; }
+  .name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+  .description {
+    text-align: center; }
   .rf {
     padding-right: 0; }
   .bf {
