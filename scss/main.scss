@@ -193,20 +193,27 @@ h2.secondary {
   max-width: 740px;
   margin: auto;
 
-  .icon_regular-fantasy,
+  .icon_regular_fantasy,
   .icon_faboom_fantasy {
     margin: 1rem;
   }
 
-  .fantasy {
+  .regular_fantasy,
+  .faboom_fantasy {
     background-color: $background-color;
     padding: 1rem 2rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
   }
 
   .description {
     font-size: 1rem;
     letter-spacing: -0.5;
+    text-align: center;
   }
 
   .differences {
@@ -264,10 +271,14 @@ h2.secondary {
   padding-left: 2rem;
 }
 
+.icon-bf,
+.icon-rf {
+  padding-right: 0.5rem;
+}
+
 .name {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .question-answers {
@@ -286,7 +297,7 @@ h2.secondary {
 .faq {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-gap: 2rem;
 }
 
 .question {
@@ -324,7 +335,7 @@ h2.secondary {
   .feedback {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-gap: 1rem;
     padding: 0 0 3rem 0;
     max-width: 940px;
     margin: auto;
@@ -380,7 +391,6 @@ h2.secondary {
 
   .player-description {
     display: flex;
-    gap: 1rem;
     flex: 0;
     align-items: center;
     padding-top: 1rem;
@@ -392,6 +402,10 @@ h2.secondary {
 
   .player-location {
     font-size: 0.7rem;
+  }
+
+  .player-name {
+    padding-left: 0.5rem;
   }
 }
 
@@ -474,8 +488,7 @@ h2.secondary {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
-    gap: 3rem;
+    padding: 3rem;
   }
 
   .tinytext {
@@ -489,7 +502,7 @@ h2.secondary {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     opacity: 0.8;
     text-align: center;
   }

@@ -33,7 +33,6 @@
 
   header {
     position: relative;
-    padding-bottom: 1rem;
   }
 
   .navbar {
@@ -42,9 +41,8 @@
   }
 
   .main-nav {
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 1rem;
+    padding: 1rem;
   }
 
   .hero {
@@ -65,13 +63,21 @@
   .available-contests-container-1 {
     flex-direction: column;
     align-items: center;
-    gap: 0;
   }
 
   .available-contests-container-2 {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 0;
+  }
+
+  .name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    text-align: center;
   }
 
   .rf {

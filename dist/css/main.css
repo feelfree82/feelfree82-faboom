@@ -166,16 +166,23 @@ h2.secondary {
   grid-gap: 1rem;
   max-width: 740px;
   margin: auto; }
-  .differences-table .icon_regular-fantasy,
+  .differences-table .icon_regular_fantasy,
   .differences-table .icon_faboom_fantasy {
     margin: 1rem; }
-  .differences-table .fantasy {
+  .differences-table .regular_fantasy,
+  .differences-table .faboom_fantasy {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
-    border-radius: 5px; }
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem; }
   .differences-table .description {
     font-size: 1rem;
-    letter-spacing: -0.5; }
+    letter-spacing: -0.5;
+    text-align: center; }
   .differences-table .differences {
     font-size: 0.8rem;
     list-style-type: none;
@@ -217,10 +224,13 @@ h2.secondary {
 .bf {
   padding-left: 2rem; }
 
+.icon-bf,
+.icon-rf {
+  padding-right: 0.5rem; }
+
 .name {
   display: flex;
-  align-items: center;
-  gap: 0.5rem; }
+  align-items: center; }
 
 .question-answers {
   max-width: 940px;
@@ -235,7 +245,7 @@ h2.secondary {
 .faq {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem; }
+  grid-gap: 2rem; }
 
 .question {
   font-size: 1.4rem;
@@ -262,7 +272,7 @@ h2.secondary {
   .players-feedback .feedback {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-gap: 1rem;
     padding: 0 0 3rem 0;
     max-width: 940px;
     margin: auto; }
@@ -300,7 +310,6 @@ h2.secondary {
     justify-content: space-between; }
   .players-feedback .player-description {
     display: flex;
-    gap: 1rem;
     flex: 0;
     align-items: center;
     padding-top: 1rem; }
@@ -308,6 +317,8 @@ h2.secondary {
     flex-shrink: 0; }
   .players-feedback .player-location {
     font-size: 0.7rem; }
+  .players-feedback .player-name {
+    padding-left: 0.5rem; }
 
 .footer-container {
   max-width: 940px;
@@ -359,8 +370,7 @@ h2.secondary {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
-    gap: 3rem; }
+    padding: 3rem; }
   .footer-container .tinytext {
     font-size: 0.7rem;
     opacity: 0.5; }
@@ -370,7 +380,7 @@ h2.secondary {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     opacity: 0.8;
     text-align: center; }
   .footer-container li.fb::before {
@@ -406,15 +416,13 @@ h2.secondary {
     float: right;
     position: sticky; }
   header {
-    position: relative;
-    padding-bottom: 1rem; }
+    position: relative; }
   .navbar {
     flex-direction: column;
     padding: 1rem; }
   .main-nav {
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 1rem; }
+    padding: 1rem; }
   .hero {
     padding: 0 1rem; }
     .hero .large-title {
@@ -426,12 +434,16 @@ h2.secondary {
     align-items: center; }
   .available-contests-container-1 {
     flex-direction: column;
-    align-items: center;
-    gap: 0; }
+    align-items: center; }
   .available-contests-container-2 {
     flex-direction: column-reverse;
-    align-items: center;
-    gap: 0; }
+    align-items: center; }
+  .name {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+  .description {
+    text-align: center; }
   .rf {
     padding-right: 0; }
   .bf {
