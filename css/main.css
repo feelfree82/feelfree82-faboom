@@ -163,7 +163,7 @@ h2.secondary {
 .differences-table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-gap: 1rem;
   max-width: 740px;
   margin: auto; }
   .differences-table .icon_regular-fantasy,
@@ -201,7 +201,6 @@ h2.secondary {
   padding: 2rem;
   padding-bottom: 0;
   display: flex;
-  gap: 4rem;
   border-bottom: 2px solid #151518; }
   .available-contests-container-1 .available-contests-container-2,
   .available-contests-container-2 .available-contests-container-2 {
@@ -211,6 +210,12 @@ h2.secondary {
     font-size: 1rem;
     letter-spacing: -0.5px;
     line-height: 1.8rem; }
+
+.rf {
+  padding-right: 2rem; }
+
+.bf {
+  padding-left: 2rem; }
 
 .name {
   display: flex;
@@ -401,7 +406,8 @@ h2.secondary {
     float: right;
     position: sticky; }
   header {
-    position: relative; }
+    position: relative;
+    padding-bottom: 1rem; }
   .navbar {
     flex-direction: column;
     padding: 1rem; }
@@ -426,6 +432,10 @@ h2.secondary {
     flex-direction: column-reverse;
     align-items: center;
     gap: 0; }
+  .rf {
+    padding-right: 0; }
+  .bf {
+    padding-left: 0; }
   .players-feedback .feedback {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
