@@ -407,8 +407,8 @@ h2.secondary {
     padding: 1rem; }
   .main-nav {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem; }
+    justify-content: space-around;
+    padding-top: 1rem; }
   .hero {
     padding: 0 1rem; }
     .hero .large-title {
@@ -437,7 +437,7 @@ h2.secondary {
   .footer-container .list .links {
     line-height: 3rem; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   label {
     display: block;
     cursor: pointer; }
