@@ -310,7 +310,6 @@ h2.secondary {
     justify-content: space-between; }
   .players-feedback .player-description {
     display: flex;
-    flex: 0;
     align-items: center;
     padding-top: 1rem; }
   .players-feedback .player-img {
