@@ -53,6 +53,12 @@
     }
   }
 
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .differences-table {
     display: flex;
     flex-direction: column;

@@ -214,6 +214,7 @@ h2.secondary {
     font-size: 1rem;
     letter-spacing: -0.5;
     text-align: center;
+    animation: none;
   }
 
   .differences {
@@ -260,6 +261,7 @@ h2.secondary {
     font-size: 1rem;
     letter-spacing: -0.5px;
     line-height: 1.8rem;
+    animation: none;
   }
 }
 
@@ -394,6 +396,7 @@ h2.secondary {
     //flex: 0;
     align-items: center;
     padding-top: 1rem;
+    animation: none;
   }
 
   .player-img {
@@ -527,6 +530,52 @@ h2.secondary {
     height: 10px;
     padding-right: 0.6rem;
   }
+}
+
+//animations
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  80% {
+    transform: translateX(5px);
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.animate-onload-left {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+.animate-onload-Right {
+  animation-name: moveInRight;
+  animation-duration: 1s;
 }
 
 @import "mobile";
