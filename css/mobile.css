@@ -26,6 +26,10 @@
     padding: 0 1rem; }
     .hero .large-title {
       padding: 1rem; }
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .differences-table {
     display: flex;
     flex-direction: column;

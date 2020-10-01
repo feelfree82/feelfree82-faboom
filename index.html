@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/main.css"/>
     <title>Faboom Home</title>
   </head>
@@ -46,15 +47,15 @@
 
     <main id="container">
       <section class="hero">
-        <h1 class="large-title">India’s First Real Fantasy Sports App</h1>
-        <p class="description">No captain or vice captain. Play the pure game of skill.</br>
+        <h1 class="large-title animate-onload-left">India’s First Real Fantasy Sports App</h1>
+        <p class="description animate-onload-Right">No captain or vice captain. Play the pure game of skill.</br>
           Join us for a fantasy gaming experience like never before.</p>
         <button class="ghost-btn">Play Now</button>
         <div class="slider">
-          <div class="slider-container">
-            <img src="img/banner-320_1.png" class="banner">
-            
-           </div>
+            <video id="header-video" width="320" muted autoplay loop>
+              <source src="img/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
         </div>
       </section>
 
@@ -62,7 +63,7 @@
         <h2 class="large-title secondary">Understand the difference</h2>
 
       <div class="differences-table">
-        <div class="regular_fantasy">
+        <div class="regular_fantasy" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500">
           <img src="img/icon-regular-fantasy.svg" class="icon_regular_fantasy">
           <h3 class="table-title">Regular Fantasy</h3>
           <p class="description">You lose if your selected captain & vice captain fails to perform.</p>
@@ -74,7 +75,7 @@
           </ul>
         </div>
 
-        <div class="faboom_fantasy">
+        <div class="faboom_fantasy" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="500">
           <img src="img/icon-faboom-fantasy.svg" class="icon_faboom_fantasy">
           <h3 class="table-title">Faboom Fantasy</h3>
           <p class="description">All 11 players help you win so your chances of winning increases.</p>
@@ -92,8 +93,8 @@
 
       <section class="available-contests">
 
-       <div class="available-contests-container-1">
-          <div class="rf">
+       <div class="available-contests-container-1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+          <div class="rf" >
             <span class="name"><img src="img/icon-rf.png" srcset="img/icon-rf@2x.png 2x, img/icon-rf@3x.png 3x" class="icon-rf">
             <h2>Rank Fantasy</h2></span>
              <p class="description">Post-Toss Contest: Here you have to rank all your 11 players to give multipliers from 2x going down to 1x. This contest ends when the match starts. So you can enter the contest after the line-ups are announced at toss.</p>
@@ -105,7 +106,7 @@
 
        </div> <!--avail contests container ends-->
 
-       <div class="available-contests-container-2">
+       <div class="available-contests-container-2" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
         
           <div class="boost-fan-image">
             <img src="img/image-bf.png" srcset="img/image-bf@2x.png 2x, img/image-bf@3x.png 3x" class="image-bf">
@@ -286,12 +287,11 @@
         <img src="img/download-fab.png"srcset="img/download-fab@2x.png 2x, img/download-fab@3x.png 3x"class="image-fab">
       </div> 
 
-
-
-
-
-
-
     </main>
+    <script type = "text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+
   </body>
 </html>
